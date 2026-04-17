@@ -8,7 +8,8 @@
 
 > ⚡ This project was built for **KBT Nashik Hackathon**  
 > 👥 Team: **Stack Smashers**  
-> 🔓 This project will be open-sourced after the hackathon.
+> 🔓 This project is OpenSourced.
+> ❎ This Project is not selected.
 
 ---
 
