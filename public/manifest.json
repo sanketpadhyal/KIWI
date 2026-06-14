@@ -1,0 +1,18 @@
+{
+  "short_name": "Kiwi",
+  "name": "Kiwi – Smart Customer Reach Platform",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0f172a",
+  "background_color": "#020617",
+  "description": "Kiwi is a smart customer reach platform powered by AdSync Engine with real-time targeting and dynamic pricing.",
+  "orientation": "portrait"
+}

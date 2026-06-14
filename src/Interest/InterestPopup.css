@@ -1,0 +1,265 @@
+.interest-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.52);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.interest-box {
+  width: min(100%, 440px);
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.16);
+  text-align: left;
+}
+
+.interest-box h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.interest-lead {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.interest-gender {
+  margin-bottom: 14px;
+}
+
+.interest-source-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.gender-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.gender-options button {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.gender-options button:hover {
+  border-color: #94a3b8;
+}
+
+.gender-button-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.gender-options button.active .gender-button-icon {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.gender-options button.male.active {
+  border-color: #93c5fd;
+  background: linear-gradient(135deg, #ffffff 0%, #eff6ff 48%, #dbeafe 100%);
+  color: #1d4ed8;
+}
+
+.gender-options button.female.active {
+  border-color: #f9a8d4;
+  background: linear-gradient(135deg, #ffffff 0%, #fdf2f8 48%, #fbcfe8 100%);
+  color: #be185d;
+}
+
+.gender-options button.male.active .gender-button-icon {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+}
+
+.gender-options button.female.active .gender-button-icon {
+  background: rgba(236, 72, 153, 0.12);
+  color: #ec4899;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.interest-item {
+  min-height: 56px;
+  padding: 10px 8px;
+  border: 1px solid #dbe3ee;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.interest-item:hover {
+  border-color: #94a3b8;
+}
+
+.interest-item.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1e3a8a;
+}
+
+.interest-item-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.interest-item.active .interest-item-icon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.interest-item:focus,
+.interest-item:focus-visible,
+.gender-options button:focus,
+.gender-options button:focus-visible,
+.interest-save:focus,
+.interest-save:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.interest-error-text {
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.interest-save {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 18px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.interest-save:hover {
+  background: #1e293b;
+}
+
+.interest-save:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .interest-overlay {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .interest-box {
+    width: 100%;
+    max-height: 88dvh;
+    overflow-y: auto;
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .interest-box h2 {
+    font-size: 22px;
+  }
+
+  .interest-lead {
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .interest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .interest-item {
+    min-height: 54px;
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .interest-item-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .interest-save {
+    min-height: 46px;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+}

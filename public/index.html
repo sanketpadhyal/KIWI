@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <title>Kiwi – Smart Customer Reach Platform</title>
+
+    <meta
+      name="Kiwi"
+      content="Kiwi is a smart customer reach platform powered by AdSync Engine. Built to transform digital marketing with real-time targeting and dynamic pricing."
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #020617, #0f172a);
+        color: #e2e8f0;
+      }
+
+      #loader {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 600px;
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .tagline {
+        font-size: 16px;
+        color: #94a3b8;
+        margin-bottom: 30px;
+      }
+
+      .divider {
+        width: 60px;
+        height: 4px;
+        background: #22c55e;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      .message {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .highlight {
+        color: #22c55e;
+        font-weight: 500;
+      }
+
+      .footer {
+        font-size: 14px;
+        color: #64748b;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- React App Mount -->
+    <div id="root"></div>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        if (loader) loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
